@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMINISTRATION</title>
+    <style>
+        body{
+            background-image: url("https://i.pinimg.com/1200x/37/da/e1/37dae199e0eedf881892ecca9a9399ec.jpg");
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap:50px;
+            text-align: justify;
+            color: bisque;
+            font-size: larger;
+        }
+        .ceo{
+            flex:1;
+            background-color: rgba(128, 128, 128, 0.699);
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .ceo img{
+            width: 200px;
+            padding-left: 150px;
+            padding-top: none;
+            
+        }
+        .chef{
+            flex:1;
+            background-color: rgba(128, 128, 128, 0.699);
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .chef img{
+            width: 225px;
+             padding-left: 150px;
+             
+        }
+        .manager{
+            flex:1;
+            background-color: rgba(128, 128, 128, 0.699);
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .manager img{
+            width: 275px;
+            padding-left: 150px;
+            padding-top: 40px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <p style="font-size: 50px;font-family: old english text mt;text-align: center;background: linear-gradient(90deg, #b8860b, #ffd700, #fff8aa, #ffd700, #b8860b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 0 2px #fff8aa,
+    0 0 5px #ffd700,
+    0 0 10px #ffdd00,
+    0 0 15px #ffd700,
+    0 0 20px #b8860b;">Administration</p>
+    <div class="container">
+        <div class="ceo">
+            <img src="{% static 'ceo.jpg' %}"><br>
+            <p style="color: goldenrod;font-size: x-large;text-align: center;"><b>Arun Rajan, CEO</b></p>
+            <p>At Ate’O Clock, the restaurant’s leadership and operations are guided by a team of dedicated professionals. Arun Rajan, our Chief Executive Officer, oversees the overall vision, strategy, and growth of the restaurant, ensuring that every department aligns with the mission and standards.</p>
+        </div>
+
+        <div class="chef">
+            <img src="{% static 'chef.jpg' %}"><br><br>
+            <p style="color: goldenrod;font-size: x-large;text-align: center;"><b>Meera Krishnan, Excutive Chef</b></p>
+            <p>Meera Krishnan, our Executive Chef, leads the kitchen team, crafting innovative menus while maintaining consistent quality and presentation, as well as coordinating with suppliers and managing staff schedules.</p>
+        </div>
+
+        <div class="manager">
+            <img src="{% static 'manager.jpg' %}"><br><br><br>
+            <p style="color: goldenrod;font-size: x-large;text-align: center;"><b>Karthik Subramanian, Manager</b></p>
+            <p>Karthik Subramanian, the Restaurant Manager, handles all front-of-house operations, ensuring seamless service, managing staff, and maintaining exceptional customer satisfaction.</p>
+        </div>
+    </div>
+</body>
+</html>

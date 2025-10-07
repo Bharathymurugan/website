@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant website</title>
+    <style>
+        body{
+            background-image: url("https://i.pinimg.com/736x/dd/64/c8/dd64c88e75b5a2f67dba7c7f20abb294.jpg");
+            background-size:cover;
+        }
+        .details{
+            display: flex;
+            flex-direction: row;
+            background-color: #a98467;
+            margin: auto;
+            align: center;
+            padding-left: 20px;
+            width:1000px;
+            border-radius: 20px;
+        }
+        .details div{
+            flex:1;
+
+        }
+        .details div{
+            flex:1;
+        }
+        .details div{
+            flex:1;
+        }
+        .details div{
+            flex:1;
+        }
+        .food img{
+            width:75%;
+            height: 350px;
+            border-radius: 20px;
+        }
+        .food{
+            text-align: center;
+            width: 950px;
+            font-size: xx-large;
+            color: wheat;
+            text-shadow: 2px 2px 5px black;;
+            font-family: brush script mt;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            align:center;
+            margin: auto;
+            width: 75%;
+            position: relative;
+            top:250px;
+            gap: 30px;
+           
+        }
+        .menu{
+            flex:1;
+            text-align: justify;
+            font-size: larger;
+            color: #522102;
+            background-color: #aec178aa;
+            padding: 20px;
+            border-radius: 20px;
+            
+        }
+        .slot{
+            flex:1;
+            text-align: justify;
+            font-size: larger;
+            color: #522102;
+            background-color: #aec178aa;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .hours{
+            flex:1;
+            text-align: justify;
+            font-size: larger;
+            color: #522102;
+            background-color: #aec178aa;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+
+    </style>
+</head>
+<body >
+    <header style="display: flex; flex-direction: row;font-family: old english text mt;text-align: center;font-size: xx-large;padding-left: 30%;color: #543804;">
+        <img src="static\restlogoorg.png" style="width: 100px;">
+        <p>WELCOME TO "ATE'O CLOCK"</p>
+    </header>
+    <div class="details">
+        <div><a href="">HOME</a></div>
+        <div><a href="{% url 'menu' %}">MENU</a></div>
+        <div><a href="{% url 'admin'%}">ADMINISTRATION</a></div>
+        <div><a href="{% url 'contact' %}">CONTACT US</a></div>
+    </div>
+
+    <div class="food">
+        
+        <img style="position: absolute;left: 200px" src="static\discountfood.jpg">
+        
+        <div>
+            <p style="position: relative;top:100px;left: 250px;background-color: rgba(238, 126, 22, 0.273);">🥗 “Dine More, Save More – Up to <b>30% OFF</b> on combos.”
+At Ate’O Clock, every meal is a feast for both your taste buds and your wallet. Come hungry, leave happy—with delicious combos at unbeatable prices!</p>
+        </div>
+    
+    </div>
+
+    <div class="container">
+        <div class="menu"><center><p style="font-family: algerian;font-size: x-large;color: #6c584c;">OUR MENU</p>
+            <img src="static\food.jpg" style="width: 250px;height: 280px;"></center>
+            <p ><i>Our new menu features fresh seasonal ingredients, chef’s signature creations, and flavor-packed combos made to suit every mood. Whether you’re craving something spicy, cheesy, or sweet, you’ll find something that hits the spot. 🍽️✨</i></p>
+            <a href="{% url 'menu' %}">Our new menu</a>
+        </div>
+
+        <div class="slot">
+            <center><p style="font-family: algerian;font-size: x-large;color: #6c584c;">BOOK A TABLE</p>
+                <img src="static\table.jpg" style="width: 250px;height: 280px;"></center>
+                <p><i>Ready for a great meal? Book your table at Ate’O Clock and let us serve you the flavors you love — no waiting, just dining!</i></p>
+                <a href=""> Book your table now</a>
+
+        </div>
+
+        <div class="hours">
+            <center><p style="font-family: algerian;font-size: x-large;color: #6c584c;">OPENING HOURS</p>
+                <img src="static\hours.jpg" style="width: 200px;height:300px;"></center>
+                <p><i>
+                    Whether it’s a quick lunch, a cozy dinner, or a weekend treat, our doors are open to serve fresh, flavorful meals and a warm dining experience every day.
+                    <pre>    Mon–Fri: 11 AM – 11 PM 
+    Sat–Sun: 10 AM – 12 AM.</pre>
+                </i></p>
+                
+        </div>
+        
+
+    </div>
+    
+
+</body>
+</html>
